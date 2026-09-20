@@ -1,1 +1,1 @@
-# summer_of_sql_lego_analysis
+# Summer of SQL | Lego Analysis
