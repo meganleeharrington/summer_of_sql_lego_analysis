@@ -13,3 +13,4 @@ This project comes from the first half of Will Sutton's [lego analysis challenge
 - [SQL scripts](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/uploading_data.sql) to create table
 - [SQL scripts](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/setting_keys.sql) to set keys
 - [ER Diagram](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/lego-erd.png)
+<img width="948" height="628" alt="lego-erd" src="https://github.com/user-attachments/assets/8f366b48-efcb-44bf-bb6f-0f029a85917d" />
