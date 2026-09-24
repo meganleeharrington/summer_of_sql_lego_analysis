@@ -1,5 +1,3 @@
-SELECT current_database();
-
 --COLORS
 CREATE TABLE staging.colors (
 	id integer,
@@ -8,15 +6,17 @@ CREATE TABLE staging.colors (
     is_trans boolean
 );
 
-SELECT * 
-FROM staging.colors;
-
 COPY staging.colors 
 FROM 'G:/My Drive/Training/Analytics Engineering/colors.csv' 
 WITH (
     FORMAT CSV, 
     HEADER TRUE
 );
+
+SELECT * 
+FROM staging.colors;
+
+
 
 --INVENTORIES
 CREATE TABLE staging.inventories (
@@ -25,15 +25,18 @@ CREATE TABLE staging.inventories (
     set_num varchar
 );
 
-SELECT * 
-FROM staging.inventories;
-
 COPY staging.inventories
 FROM 'G:/My Drive/Training/Analytics Engineering/inventories.csv'
 WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+SELECT * 
+FROM staging.inventories;
+
+
+
 --INVENTORY_PARTS
 CREATE TABLE staging.inventory_parts (
     inventory_id integer,
@@ -43,15 +46,17 @@ CREATE TABLE staging.inventory_parts (
     is_spare boolean
 );
 
-select *
-from staging.inventory_parts;
-
 COPY staging.inventory_parts
 FROM 'G:/My Drive/Training/Analytics Engineering/inventory_parts.csv'
 WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+select *
+from staging.inventory_parts;
+
+
 
 --INVENTORY_SETS
 CREATE TABLE staging.inventory_sets (
@@ -60,15 +65,17 @@ CREATE TABLE staging.inventory_sets (
     quantity integer
 );
 
-SELECT *
-FROM staging.inventory_sets;
-
 COPY staging.inventory_sets
 FROM 'G:/My Drive/Training/Analytics Engineering/inventory_sets.csv'
 WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+SELECT *
+FROM staging.inventory_sets;
+
+
 
 --PARTS
 CREATE TABLE staging.parts (
@@ -77,9 +84,6 @@ CREATE TABLE staging.parts (
     part_cat_id integer
 );
 
-SELECT *
-FROM staging.parts;
-
 COPY staging.parts
 FROM 'G:/My Drive/Training/Analytics Engineering/parts.csv'
 WITH (
@@ -87,14 +91,16 @@ WITH (
     HEADER TRUE
 );
 
+SELECT *
+FROM staging.parts;
+
+
+
 --PART_CATEGORIES
 CREATE TABLE staging.part_categories (
     id integer,
     name varchar
 );
-
-SELECT *
-FROM staging.part_categories;
 
 COPY staging.part_categories
 FROM 'G:/My Drive/Training/Analytics Engineering/part_categories.csv'
@@ -102,6 +108,11 @@ WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+SELECT *
+FROM staging.part_categories;
+
+
 
 --SETS
 CREATE TABLE staging.sets (
@@ -112,15 +123,17 @@ CREATE TABLE staging.sets (
     num_parts integer
 );
 
-SELECT *
-FROM staging.sets;
-
 COPY staging.sets
 FROM 'G:/My Drive/Training/Analytics Engineering/sets.csv'
 WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+SELECT *
+FROM staging.sets;
+
+
 
 --THEMES
 CREATE TABLE staging.themes (
@@ -129,12 +142,12 @@ CREATE TABLE staging.themes (
     parent_id integer
 );
 
-SELECT *
-FROM staging.themes;
-
 COPY staging.themes
 FROM 'G:/My Drive/Training/Analytics Engineering/themes.csv'
 WITH (
     FORMAT CSV,
     HEADER TRUE
 );
+
+SELECT *
+FROM staging.themes;
