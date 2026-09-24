@@ -9,7 +9,7 @@ ALTER TABLE staging.parts ADD PRIMARY KEY (part_num);
 --SET FOREIGN KEYS
 ALTER TABLE staging.inventory_sets ADD FOREIGN KEY (inventory_id) REFERENCES staging.inventories(id);
 ALTER TABLE staging.inventory_sets ADD FOREIGN KEY (set_num) REFERENCES staging.sets(set_num);
-**ALTER TABLE staging.inventories ADD FOREIGN KEY (set_num) REFERENCES staging.sets(set_num);
+ALTER TABLE staging.inventories ADD FOREIGN KEY (set_num) REFERENCES staging.sets(set_num);
 ALTER TABLE staging.sets ADD FOREIGN KEY (theme_id) REFERENCES staging.themes(id);
 ALTER TABLE staging.inventory_parts ADD FOREIGN KEY (inventory_id) REFERENCES staging.inventories(id);
 ALTER TABLE staging.inventory_parts ADD FOREIGN KEY (part_num) REFERENCES staging.parts(part_num);
