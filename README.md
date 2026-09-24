@@ -12,4 +12,4 @@ This project comes from the first half of Will Sutton's [lego analysis challenge
 ### Deliverables:
 - [SQL scripts](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/uploading_data.sql) to create table
 - [SQL scripts](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/setting_keys.sql) to set keys
-- [ER Diagram]()
+- [ER Diagram](https://github.com/meganleeharrington/summer_of_sql_lego_analysis/blob/main/lego-erd.png)
